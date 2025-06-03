@@ -12,8 +12,8 @@ This project contains several implementations of a car parking simulation, demon
 - Each implementation uses a different concurrency control mechanism to solve the problem:
 
   1. **ParkLockCond** — Uses `java.util.concurrent.locks.Lock` and `Condition` variables.
-  2. **ParkSem** — Uses Java `Semaphore`s.
-  3. **ParkMon** — Uses Java intrinsic monitors with `synchronized`, `wait()`, and `notifyAll()`.
+  2. **ParkSemaphore** — Uses Java `Semaphore`s.
+  3. **ParkSync** — Uses Java intrinsic monitors with `synchronized`, `wait()`, and `notifyAll()`.
 
 ---
 
