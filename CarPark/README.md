@@ -25,13 +25,13 @@ This project contains several implementations of a car parking simulation, demon
 - Threads wait on conditions if the parking lot is full or empty.
 - Provides fine-grained control of locking and signaling.
 
-### 2. ParkSem (Semaphore-based)
+### 2. ParkSemaphore (Semaphore-based)
 
 - Uses semaphores to control access and track free and occupied spots.
 - Semaphores `bufferEmpty` and `bufferFull` represent available and occupied slots.
 - A mutex semaphore ensures atomic updates of shared state.
 
-### 3. ParkMon (Java Monitors)
+### 3. ParkSync (Java Monitors)
 
 - Uses Java’s built-in monitor mechanism (`synchronized` methods).
 - Employs `wait()` and `notifyAll()` to handle thread waiting and signaling.
